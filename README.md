@@ -5,23 +5,31 @@
 
 # 接口说明
 
-## 获取列表
+## 获取苹果列表
 
 ```javascript
-axios.get('/list')
+axios.get('/appleList')
 ```
 
 ## 删除
 
 ```javascript
-axios.delete(`/del/${id}`)
+axios.delete(`/appleDel/${id}`)
 ```
 
 ## 编辑
 
 ```javascript
-axios.patch(`/edit/${id}`, {
-  name: '姓名',
-  place: '籍贯',
+axios.patch(`/Appleedit/${id}`, {
+  price: '价格',
+})
+```
+
+## 新增
+
+```javascript
+axios.patch(`/Addapple`, {
+  id: 'id'
+  price: '价格',
 })
 ```
